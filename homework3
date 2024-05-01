@@ -1,0 +1,40 @@
+#Lesson 3: Python Lists
+#Problem #1 
+#task 1
+
+grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
+grades.sort(reverse=True)
+print(grades)
+
+#task 2
+grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
+print(sum(grades)/len(grades))
+
+#Problem #2
+#task 1
+submitted = ["Alice", "Bob", "Charlie", "David"]
+attended = ["Charlie", "Eve", "Alice", "Frank"]
+
+good_students = []
+for student in submitted:
+    if student in attended:
+        good_students.append(student)
+        print(f"{student} submitted and attended the class.")
+
+
+#Problem #3
+#task 1
+
+temperatures = [72, 75, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106]
+print(temperatures[7:14])
+
+#task 2
+
+temperatures = [72, 75, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106]
+more_temp = []
+for high_temp in temperatures:
+    if high_temp >= 100:
+        more_temp.append(high_temp)
+print(more_temp)
+
+
